@@ -1,0 +1,25 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.0.0
+MinimumVisualStudioVersion = 17.0.0.0
+
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RadzenRTL", "RadzenRTL.csproj", "{4AC025CD-9E32-4F7C-BD25-D6EBE6AF3CBB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4AC025CD-9E32-4F7C-BD25-D6EBE6AF3CBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AC025CD-9E32-4F7C-BD25-D6EBE6AF3CBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AC025CD-9E32-4F7C-BD25-D6EBE6AF3CBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AC025CD-9E32-4F7C-BD25-D6EBE6AF3CBB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DF0BA30C-E5AF-405A-9097-2857082348C8}
+	EndGlobalSection
+EndGlobal
