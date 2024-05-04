@@ -8,7 +8,6 @@ using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
 using Radzen;
 using Radzen.Blazor;
-using RadzenRTL.Services;
 
 namespace RadzenRTL.Components
 {
@@ -32,9 +31,6 @@ namespace RadzenRTL.Components
         [Inject]
         protected NotificationService NotificationService { get; set; }
 
-        [Inject]
-        protected LanguageServices Language { get; set; }
-
         protected string culture;
 
         protected override void OnInitialized()
@@ -47,8 +43,6 @@ namespace RadzenRTL.Components
             var redirect = new Uri(NavigationManager.Uri).GetComponents(UriComponents.PathAndQuery | UriComponents.Fragment, UriFormat.UriEscaped);
 
             var query = $"?culture={Uri.EscapeDataString(culture)}&redirectUri={redirect}";
-
-            Language.setLanguage(culture);
 
             NavigationManager.NavigateTo("Culture/SetCulture" + query, forceLoad: true);
         }

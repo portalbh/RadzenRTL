@@ -1,6 +1,5 @@
 using Radzen;
 using RadzenRTL.Components;
-using RadzenRTL.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
@@ -8,7 +7,6 @@ builder.Services.AddRazorComponents().AddInteractiveServerComponents().AddHubOpt
 builder.Services.AddControllers();
 builder.Services.AddRadzenComponents();
 builder.Services.AddHttpClient();
-builder.Services.AddSingleton<LanguageServices>(); // <------ ADD Service
 builder.Services.AddLocalization();
 var app = builder.Build();
 // Configure the HTTP request pipeline.

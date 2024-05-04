@@ -1,9 +1,9 @@
 @inherits LayoutComponentBase
+@using System.Globalization;
 @inject Microsoft.Extensions.Localization.IStringLocalizer<MainLayout> L
-@inject LanguageServices Language
 <RadzenComponents />
 
-<RadzenLayout dir=@Language.getLRD() lang=@Language.getLanguage() style="grid-template-areas: 'rz-sidebar rz-header' 'rz-sidebar rz-body';">
+<RadzenLayout dir=@(CultureInfo.CurrentCulture.Name =="ar" ? "RTL" : "LTR") lang=@(CultureInfo.CurrentCulture.Name) style="grid-template-areas: 'rz-sidebar rz-header' 'rz-sidebar rz-body';">
     <RadzenHeader>
         <RadzenRow JustifyContent="JustifyContent.Start" AlignItems="AlignItems.Center" Gap="0">
             <RadzenColumn Size="5">
